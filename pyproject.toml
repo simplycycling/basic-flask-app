@@ -1,0 +1,25 @@
+[project]
+name = "flaskanetes"
+version = "0.1.0"
+description = "Flask app for Kubernetes deployment"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "flask==3.0.2",
+    "gunicorn==21.2.0",
+    "python-dotenv==1.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.0.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest==8.0.2",
+]
